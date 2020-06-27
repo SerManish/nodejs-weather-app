@@ -32,7 +32,7 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:"Help",
-        helpText:"help is not provided here!",
+        helpText:"Just type a valid location and click on the search button",
         name:"Manish Kumar Giri"
     })
 });
@@ -81,5 +81,5 @@ app.get('*',(req,res) =>{
 });
 
 app.listen(port,()=>{
-    console.log("Server up in port 3000");
+    console.log("Server up in port " + port);
 })
